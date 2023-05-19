@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/title")
 public class SampleController {
 
-    @GetMapping("/title")
+    @GetMapping()
     public String getTitle() {
         return "<title>Hello from Back-end</title>";
     }
